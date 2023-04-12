@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "q" class="com.soft.beans.Welcome">
+   
+   <constructor-arg value="101"></constructor-arg>
+   <constructor-arg value="aniket"></constructor-arg>
+   <constructor-arg name ="city">
+   <list value-type="java.lang.String">
+   <value>yavatmal</value>
+   <value>nagpur</value>
+   <value>pune</value>
+   <value>akola</value>
+   </list>
+   </constructor-arg>
+   
+     <constructor-arg name="courses">
+     <set value-type="java.lang.String">
+     <value>java</value>
+     <value>power bi</value>
+     <value>python</value>
+     <value>c++</value>
+     
+     </set>
+     
+     </constructor-arg>
+     
+     
+     
+     <constructor-arg name="email">
+     
+     <map key-type="java.lang.String" value-type ="java.lang.String">
+     <entry key="1" value="ani@gmail.com"/>
+     <entry key="2" value="di@gmail.com"/>
+     <entry key="3" value="ra@gmail.com"/>
+     <entry key="4" value="ku@gmail.com"/>
+     
+     </map>
+     
+     
+     </constructor-arg>
+   </bean>
+   
+   
+</beans>
